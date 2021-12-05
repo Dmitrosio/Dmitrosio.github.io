@@ -1,0 +1,93 @@
+/* Dmitrii Orlov */
+body{
+  background: linear-gradient(90deg, white, #43CEF1);
+
+}
+
+#nav{
+  text-align: center;
+  background: linear-gradient(150deg, white, #3AA3DF);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 60px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding:5px;
+}
+
+a{
+  margin-right: 15px;
+  font-family: 'RobotoCondensedRegular';
+    font-weight: normal;
+    font-style: normal; 
+}
+
+.button{
+  border-radius: 10px;
+  padding: 5px;
+  width: 120px;
+  border-width: 2px;
+  margin-right: 20px;
+  margin-top: 5px;
+  background: linear-gradient(40deg, white, #43CEF1);
+}
+
+.startButton{
+  border-radius: 10px;
+  width: 50px;
+  border-width: 2px;
+  margin-top: 5px;
+  background: linear-gradient(40deg, white, #E31717);
+}
+
+#counter1 {
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  padding-top: 35px;
+  border:10px solid #CCC;
+  align-items: center;
+  margin:auto;
+  border-radius:50%; 
+  background-color: #4DE9EB;
+}
+#counter2{
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  padding-top: 35px;
+  border:10px solid #CCC;
+  align-items: center;
+  margin:auto;
+  border-radius:50%; 
+  background-color: #4DE9EB;
+  -webkit-animation: mymove 1s infinite;
+  animation: mymove 5s infinite;
+}
+img{
+  width: 300px; 
+  height: 300px;
+  -webkit-animation: mymove1 1s infinite;
+  animation: mymove1 5s infinite;
+}
+
+#game{
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  border:30px solid #CCC;
+  align-items: center;
+  margin:auto;
+  border-radius:30%; 
+  background-color: rgb(135, 150, 137);
+}
+
+/* Standard syntax */
+@keyframes mymove{
+  from{ transform: rotate3d(709, 405, 50, 0deg); }
+  to{ transform: rotate3d(256, -600, 50, 360deg); }
+}
+@keyframes mymove1{
+  from{ transform: rotatey(0deg);}
+  to{ transform: rotatey(360deg);}
+}
